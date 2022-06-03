@@ -1,0 +1,5 @@
+package com.saadahmedsoft.shortintent;
+
+public enum Anim {
+    ZOOM, FADE, WINDMILL, SPIN, DIAGONAL, SPLIT, SHRINK, CARD, INOUT, SWIPELEFT, SWIPRIGHT, SLIDELEFT, SLIDERIGHT, SLIDEDOWN, SLIDEUP
+}
