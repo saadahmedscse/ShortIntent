@@ -22,7 +22,7 @@ public class ShortIntent {
     }
 
     @SuppressLint("StaticFieldLeak")
-    private static ShortIntent instance = null;
+    volatile private static ShortIntent instance = null;
 
     public static ShortIntent getInstance(Activity activity) {
         if (instance == null) {
@@ -31,7 +31,7 @@ public class ShortIntent {
         return instance;
     }
 
-    public ShortIntent addDestination(Class destination) {
+    public ShortIntent addDestination(Class<?> destination) {
         intent = new Intent(activity, destination);
         activity.startActivity(intent);
         return instance;
