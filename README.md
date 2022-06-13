@@ -17,7 +17,7 @@ Add the dependency to your module build.gradle:
 ```groovy
 dependencies {
     ...
-    implementation 'com.saadahmedev.shortintent:shortintent:2.0.0'
+    implementation 'com.saadahmedev.shortintent:shortintent:3.0.0'
 }
 ```
 
