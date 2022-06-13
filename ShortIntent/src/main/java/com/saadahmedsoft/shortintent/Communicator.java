@@ -5,6 +5,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.google.gson.Gson;
+
 public class Communicator {
 
     @SuppressLint("StaticFieldLeak")
@@ -54,8 +56,14 @@ public class Communicator {
         return instance;
     }
 
-    public Communicator putExtras(String key, Bundle value) {
+    public Communicator putExtra(String key, Bundle value) {
         intent.putExtra(key, value);
+        return instance;
+    }
+
+    public Communicator putExtra(String key, Object object) {
+        Gson gson = new Gson();
+        intent.putExtra(key, gson.toJson(object));
         return instance;
     }
 
@@ -81,6 +89,12 @@ public class Communicator {
 
     public Double getDoubleExtra(String key, double defaultValue) {
         return intent.getDoubleExtra(key, defaultValue);
+    }
+
+    @SuppressWarnings("unchecked")
+    public <T> T getObject(String key, Class<?> objectType) {
+        Gson gson = new Gson();
+        return (T) gson.fromJson(intent.getStringExtra(key), objectType);
     }
 
     public Finisher addTransition(Anim anim) {
