@@ -9,7 +9,7 @@ Getting tired by usign the default Intent class? ShortIntent is a lightweight an
 * Min SDK 16 (Android Jellybean 4.1)
 * Written in Java
 
-A lightweight, easy-to-use Android library that lets us to keep data in shared preferences also with objects and much more features
+A lightweight, easy-to-use Android library that lets us to intent between two activities with transitions by just some simple steps.
 
 ## Installation
 
