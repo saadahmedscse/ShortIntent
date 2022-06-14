@@ -4,7 +4,7 @@
 <a href="https://github.com/saadahmedscse/shortintent"><img alt="API" src="https://badges.frapsoft.com/os/v1/open-source.png?v=103"/></a>
 <a href="https://github.com/saadahmedscse/shortintent/graphs/traffic"><img alt="Total Clones" src="https://img.shields.io/badge/Clones-126-orange"/></a>
 <a href="[https://github.com/rrsaikat/CodeChallengeByShikho/graphs/traffic](https://github.com/saadahmedscse/shortintent/graphs/traffic)"><img alt="Total Views" src="https://img.shields.io/badge/Views-382-brightgreen"/></a>
-# TinyDB
+# Short Intent
 Getting tired by usign the default Intent class? ShortIntent is a lightweight and easy to use Android library that provides user to intent between two activities with transitions by just some simple steps.
 * Min SDK 16 (Android Jellybean 4.1)
 * Written in Java
